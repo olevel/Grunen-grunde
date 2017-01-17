@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_pending_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hacker.olevel.grunen_grunde.RegisterPendingItem">
+
+    <ImageView
+        android:src="@drawable/wood_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"
+        android:contentDescription="pending image with PhoneNumber" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+            <ImageView
+                android:src="@drawable/ic_shopping_cart"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/shoping_cart" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/shoping_cart"
+                android:layout_marginLeft="8dp"
+                android:inputType="textPersonName"
+                android:hint="Item"
+                android:ems="10"
+                android:id="@+id/itemName" />
+            <ImageView
+                android:src="@drawable/ic_person"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_below="@id/itemName"
+                android:id="@+id/ownerIcon" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ownerIcon"
+                android:layout_below="@id/itemName"
+                android:layout_marginLeft="8dp"
+                android:inputType="textPersonName"
+                android:hint="Owner"
+                android:ems="10"
+                android:id="@+id/ownerName" />
+
+            <ImageView
+                android:src="@drawable/ic_action_phone_start"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/ownerIcon"
+                android:id="@+id/phoneIcon" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/phoneIcon"
+                android:layout_below="@id/ownerName"
+                android:layout_marginLeft="8dp"
+                android:inputType="phone"
+                android:hint="0049 **** **** ****"
+                android:ems="10"
+                android:id="@+id/phoneNumber" />
+
+            <ImageView
+                android:src="@drawable/ic_action_location"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_below="@id/phoneNumber"
+                android:id="@+id/locationIcon" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phoneNumber"
+                android:layout_toRightOf="@id/locationIcon"
+                android:layout_marginLeft="8dp"
+                android:inputType="textPostalAddress"
+                android:hint="8 Im Grunen-Grunde"
+                android:ems="10"
+                android:id="@+id/location" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_below="@id/location"
+                android:layout_toRightOf="@id/locationIcon">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textPostalAddress"
+                    android:ems="10"
+                    android:id="@+id/postCode"
+                    android:hint="Post code" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:inputType="textPostalAddress"
+                    android:hint="City"
+                    android:ems="10"
+                    android:id="@+id/city" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
